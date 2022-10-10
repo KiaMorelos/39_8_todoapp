@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import App from "./App";
+import TodoList from "./TodoList";
 
 it("should render without crashing", () => {
-  render(<App />);
+  render(<TodoList />);
 });
 
 it("should match snapshot", () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<TodoList />);
   expect(asFragment()).toMatchSnapshot();
 });
